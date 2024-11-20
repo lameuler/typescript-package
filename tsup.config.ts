@@ -5,7 +5,7 @@ import { glob } from 'glob'
 import { defineConfig } from 'tsup'
 
 export default defineConfig({
-    entry: await glob(['src/**/*.ts'], { ignore: ['**/*.d.ts'] }),
+    entry: await glob(['src/**/*.ts'], { ignore: ['**/*.d.ts'], posix: true }),
     bundle: false,
     format: ['esm', 'cjs'],
     outExtension() {
