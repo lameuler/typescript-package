@@ -61,6 +61,12 @@ dist/
     └── ...
 ```
 
+Building can also be done automatically whenever a change is detected. Note that this does not rebuild type declarations and will need to be rerun if files are added or removed.
+
+```sh
+npm run build:watch
+```
+
 ## Test
 
 ```sh
